@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(228, 156, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-background:hover{
+    border: 3px solid rgb(241, 230, 230);
+    padding: 60px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px 0px red;
+
+}
+.age-calculator{
+    width: 400px;
+    
+    
+}
+.input{
+    border-radius: 10px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around
+    
+}
+
+.input input{
+    padding: 7px 30px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+}
+.input button {
+    padding: 7px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.input button:hover{
+    background-color: rgb(228, 156, 2);
+    color: white;
+}
+.input button:active{
+    transform: calc(.95s);
+    box-shadow: 1px 1px 1px 2px gray;
+}
+.result{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 25px;
+}
+.years{
+    background-color: black;
+    width: 100px;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    padding: 1px 0px;
+    border-radius: 10px;
+}
+
+.months{
+    background-color: black;
+    width: 100px;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    padding: 1px 0px;
+    border-radius: 10px;
+}
+.days{
+    background-color: black;
+    width: 100px;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    padding: 1px 0px;
+    border-radius: 10px;
+}
