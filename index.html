@@ -9,24 +9,30 @@
 <body>
     
     <div class="calculator-background">
+        <h1>Age Calculator</h1>
         <div class="age-calculator">
         <div class="input">
-            <input type="date">
-            <button>Calculate</button>
+            <input type="date" id="birthdate">
+            <button onclick="ageCalculator()">Calculate</button>
         </div>
         <div class="result">
             <div class="years">
-                <h1>20</h1>
+                <h1 id="myYear">0</h1>
                 <p>Years</p>
 
             </div>
             <div class="months">
-                <h1>2</h1>
+                <h1 id="myMonth">0</h1>
                 <p>Months</p>
             </div>
             <div class="days">
-                <h1>23</h1>
+                <h1 id="myDay">0</h1>
                 <p>Days</p>
+            </div>
+        </div>
+        <div>
+            <div class="clear-button">
+                <button onclick="clearAll()">ReSet</button>
             </div>
         </div>
     </div>

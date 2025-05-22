@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DK+Loopet:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     background-color: rgb(228, 156, 2);
     display: flex;
@@ -6,6 +7,12 @@ body{
     height: 100vh;
 }
 
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+}
 .calculator-background:hover{
     border: 3px solid rgb(241, 230, 230);
     padding: 60px 15px;
@@ -14,8 +21,7 @@ body{
 
 }
 .age-calculator{
-    width: 400px;
-    
+    width: 400px;   
     
 }
 .input{
@@ -82,3 +88,64 @@ body{
     padding: 1px 0px;
     border-radius: 10px;
 }
+.clear-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.clear-button button{
+    background-color: black;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width:380px){
+    .age-calculator{
+        width: 330px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+    .input input{
+        width: 80%;
+        margin-bottom: 13px;
+        padding-top: 10px;
+        font-size: larger;
+    }
+    .result{
+    display: flex;
+    margin-top: 20px;
+}
+    /* .result.years.months.days{
+        background-color: black;
+        width: 50%;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        line-height: 16px;
+        border-radius: 10px;
+        gap: 10px;
+    } */
+  .clear-button button{
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+}
+    
