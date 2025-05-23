@@ -23,6 +23,16 @@ let years = year-birthYear;
 let months = moth-birthMonth;
 let days = day-birthDay;
 
+// if the month is negative
+if(months <0){
+    years--;
+    months = months + 12;
+}
+
+if(days<0){
+    months--;
+    days = days + new Date(years,months,0).getDate();
+}
 const defaultYears = parseInt(document.getElementById("myYear").innerText);
 
 let setYears = years + defaultYears;
